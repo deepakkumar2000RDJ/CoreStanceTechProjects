@@ -1,0 +1,65 @@
+.maindiv{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+.all{
+
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#fd1{
+    background-color: orangered;
+    height: 180px;
+    margin-bottom: 20px;
+    flex-grow: 3;
+}
+#fd2{
+    background-color: green;
+    height: 180px;
+    margin: 20px;
+    flex-grow: 3;
+
+}
+.flexdo{
+    width: 90pc;
+    height: 110px;
+    padding: 12px;
+    align-items: center;
+}
+#imggg{
+    margin: 28px;
+    
+}
+.logo{
+    text-align: center;
+}
+
+
+
+
+.rotate {
+    animation: rotation 5s infinite linear;
+  }
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+
+    }
+}
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
