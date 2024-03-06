@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Our Soul</title>
+
+
+
+    <style>
+        body {
+            /* background-image: url(../SOS/PrjtSOS/hm3.jpg);    */
+
+        }
+
+        /* *******************************************Header************************************ */
+
+        .stick1 {
+            top: 0px;
+            background-color: aliceblue;
+            position: fixed;
+            overflow: visible;
+            display: block;
+            overflow-x: hidden;
+
+        }
+
+        .btn1 {
+            background: transparent;
+            outline: none;
+            font-size: 20px;
+            color: #00afef;
+            border: none;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            background: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn3 {
+            background-color: #00afef;
+            border-radius: 40px;
+            width: 120px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        /* ****************************************Slides***************************************************** */
+
+        .slide {
+            float: left;
+            height: 600px;
+            width: 1500px;
+            background: none;
+        }
+
+        .slide-wrapper {
+
+            width: calc(1500px * 5);
+            /* step-end, step-start, ease in ot, ease in,ease out */
+            animation: slide 15s step-end infinite;
+
+        }
+
+        .slide:nth-child(1) {
+            background-image: url("https://www.soschildrensvillages.in/wp-content/uploads/2022/03/Revised-opt3.jpeg");
+            background-size: cover;
+        }
+
+        .slide:nth-child(2) {
+            background-image: url(../SOS/PrjtSOS/slid6.jpg);
+            background-size: 1500px 650px;
+        }
+
+
+        .slide:nth-child(3) {
+            background-image: url("https://assets.thehansindia.com/h-upload/2019/10/11/225266-sos-childrens-village.jpg");
+            background-size: 1500px 600px;
+        }
+
+
+        .slide:nth-child(4) {
+
+            background-image: url(../SOS/PrjtSOS/ch6.jpg);
+            background-size: 1500px 600px;
+
+        }
+
+        .slide:nth-child(5) {
+            background-image: url("https://www.soschildrensvillages.in/wp-content/uploads/2021/10/Website-2.jpg");
+            background-size: cover;
+        }
+
+
+
+
+        @keyframes slide {
+
+
+            20% {
+                margin-left: 0px;
+            }
+
+            40% {
+                margin-left: calc(-1500px * 1);
+            }
+
+            60% {
+                margin-left: calc(-1500px * 2);
+            }
+
+            80% {
+                margin-left: calc(-1500px * 3);
+            }
+
+            90% {
+                margin-left: calc(-1500px * 4);
+            }
+        }
+
+
+        /* *********************************Flip Boxes**************************************************** */
+
+        /* 1st flip box */
+
+        .flip-card {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+
+            background-color: #00a0e2;
+            color: black;
+
+        }
+
+        .flip-card-back {
+            background-color: #00a0e2;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* 2nd flip box */
+
+        /* .flip-card1 { 
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner1 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card1:hover .flip-card-inner1 {
+            transform: rotateY(180deg);
+        }*/
+
+        .flip-card-front1,
+        .flip-card-back1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front1 {
+
+            background-color: #00c6ed;
+            color: black;
+
+        }
+
+        .flip-card-back1 {
+            background-color: #00c6ed;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* 3rd flip box */
+
+        /* .flip-card3 {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner3 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card3:hover .flip-card-inner3 {
+            transform: rotateY(180deg);
+        }*/
+
+        .flip-card-front3,
+        .flip-card-back3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front3 {
+
+            background-color: #76d8f4;
+            color: black;
+
+        }
+
+        .flip-card-back3 {
+            background-color: #76d8f4;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* 4th flip box  */
+
+        /* .flip-card4 {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner4 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+    
+
+         .flip-card4:hover .flip-card-inner4 {
+            transform: rotateY(180deg);
+        }*/
+
+        .flip-card-front4,
+        .flip-card-back4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front4 {
+
+            background-color: #ff4161;
+            color: black;
+
+        }
+
+        .flip-card-back4 {
+            background-color: #ff4161;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+
+
+
+        /* 5th flip box */
+
+
+        .flip-card5 {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner5 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card5:hover .flip-card-inner5 {
+            transform: rotateX(180deg);
+        }
+
+
+        .flip-card-front5,
+        .flip-card-back5 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front5 {
+
+            background-color: #47b94c;
+            color: black;
+
+        }
+
+        .flip-card-back5 {
+            background-color: #47b94c;
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+        /* 6th flip boxs */
+
+
+        .flip-card6 {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner6 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card6:hover .flip-card-inner6 {
+            transform: rotateX(180deg);
+        }
+
+        .flip-card-front6,
+        .flip-card-back6 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front6 {
+
+            background-color: #75c674;
+            color: black;
+
+        }
+
+        .flip-card-back6 {
+            background-color: #75c674;
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+        /* 7th flip box */
+
+        .flip-card7 {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner7 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card7:hover .flip-card-inner7 {
+            transform: rotateX(180deg);
+        }
+
+        .flip-card-front7,
+        .flip-card-back7 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front7 {
+
+            background-color: #9ad498;
+            color: black;
+
+        }
+
+        .flip-card-back7 {
+            background-color: #9ad498;
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+        /* 8th flip box */
+
+        .flip-card8 {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+
+        }
+
+        .flip-card-inner8 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .flip-card8:hover .flip-card-inner8 {
+            transform: rotateX(180deg);
+        }
+
+        .flip-card-front8,
+        .flip-card-back8 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front8 {
+
+            background-color: rgb(255, 140, 0);
+            color: black;
+
+        }
+
+        .flip-card-back8 {
+            background-color: rgb(255, 140, 0);
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+
+
+
+        /* <!--**********************************************  OUR COMMITED NO CHILD ALONE IMG *******************************************************-->*/
+
+        .d1 {
+            background-color: red;
+            width: 1500px;
+            height: 500px;
+        }
+
+
+        /**************************************  Our Impact-Supporting Children wherever they are 8 BOXES **********************************/
+
+        /* Box 1 */
+        /* f1 is a main box and another small box is (s1) and other description is there in (a1) box */
+
+
+        .boximg{
+         width: auto;
+         height: auto;
+        align-content: center;
+
+        }
+        .f1 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #00a0e2;
+        }
+
+        .s1 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #00a0e2;
+        }
+
+        .a1 {
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+
+        }
+
+        /* 2 box */
+
+        .f2 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #00afef;
+        }
+
+        .s2 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #00afef;
+        }
+
+        .a2 {
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /* 3 box */
+
+        .f3 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #00c6ed;
+        }
+
+        .s3 {
+            width: 130px;
+            height: 100px;
+            float: left;
+            background-color: #00c6ed;
+        }
+
+        .a3 {
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /* 4 box */
+
+        .f4 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #47b94c;
+        }
+
+        .s4 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #47b94c;
+        }
+
+        .a4 {
+
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /* 5 box */
+        .f5 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #75c674;
+        }
+
+        .s5 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #75c674;
+        }
+
+        .a5 {
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /* 6 box */
+
+        .f6 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #9ad498;
+        }
+
+        .s6 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #9ad498;
+        }
+
+        .a6 {
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /* 7 box */
+
+        .f7 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #ff4161;
+        }
+
+        .s7 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #ff4161;
+        }
+
+        .a7 {
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /*  8box */
+
+        .f8 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid #ff6a00;
+        }
+
+        .s8 {
+            float: left;
+            width: 130px;
+            height: 100px;
+            background-color: #ff6a00;
+        }
+
+        .a8 {
+
+            align-items: center;
+            width: auto;
+            height: 100px;
+
+        }
+
+        /**************************** WHERE WE WORK ************************************/
+
+
+        .d2 {
+            background-color: transparent;
+            background-image: linear-gradient(250deg, #76d8f4 0%, #00a0e2 100%);
+            width: 100%;
+            height: 300px;
+        }
+
+        .d3 {
+            background-color: #0595d2;
+            border: 1px solid #0492cd;
+        }
+
+
+        /* <!--*************************************** TWO MAPs *****************************************--> */
+
+        .bimg {
+            
+            
+            /* background-position-x: ;
+            background-repeat: no-repeat; */
+            /* padding: 1pc;
+            margin: 1px; */
+            /* width: 1500px; */
+            /* height: 150px;  */
+            /* background-position: center; */
+
+
+        }
+
+
+
+        /* <!--************************ NEWS AND UPDATE **********************************--> */
+
+        .k1 {
+            background-image: linear-gradient(250deg, #ff90319c 0%, #ff7500 100%);
+            background-color: transparent;
+            width: 1500px;
+            height: 300px;
+        }
+
+        .h1 {
+            margin-left: 0;
+            background: #d864004f;
+            padding: 20px 10px;
+            border-radius: 5px;
+            border: 1px solid #f17913;
+            width: 300px;
+            height: 100px;
+        }
+
+
+        /* <!--*********************************************Laast block "OVERVIEW" ************************************************  --> */
+
+        .k2 {
+            background-color: #00a0e2;
+            width: 1500px;
+            height: 500px;
+        }
+
+
+        .boximg {
+            background-color: aliceblue;
+
+
+        }
+
+
+
+        /***********************************Finish********************** */
+
+
+        /* <!-- **************************************** myimgfirst 6 Img******************************* --> */
+        /* myfirst img flip */
+
+        /* .myimg {
+            /* width: 1500px;
+            height: 500px; 
+            background-color: #00afef;
+            margin: 1px;
+            padding: 0.5pc;
+        } */
+
+        .myimgflip-inner:hover {
+
+            transform: rotateX(180deg);
+
+        }
+
+        .myimgflip-inner {
+            padding: 1pc;
+            background-color: #00afef;
+            position: relative;
+            width: 1500px;
+            height: 500px;
+            text-align: center;
+            align-items: center;
+            transition: transform 0.9s;
+            transform-style: preserve-3d;
+            box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .myimgflip-front1,
+        .myimgflip-back1 {
+
+            position: absolute;
+            /* width: 800px;
+            height: 500px; */
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .myimgflip-front1 {
+            width: auto;
+            height: auto;
+            background-color: #00a0e2;
+            color: black;
+
+        }
+
+        .myimgflip-back1 {
+            width: auto;
+            height: auto;
+            background-color: #00a0e2;
+            color: white;
+            transform: rotateX(180deg);
+        }
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+    <!-- ***************************Header********************** -->
+
+    <div class="stick1">
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../SOS/PrjtSOS/logo.jpg" width="220px" height="80px" alt="LOGO">
+                    <img src="PrjtSOS/hm1.jpg" width="220px" height="80px" alt="LOGO">
+
+
+
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                    &emsp;
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+                </td>
+
+                <td>
+                    <a href="https://www.soschildrensvillages.in/about-us/" target="_blank">
+
+                        <button class="btn1" id="show"> About Us </button> </a>
+
+                    &emsp; &emsp;&emsp;
+                </td>
+
+                <td>
+                    <br>
+                    <a href="https://www.soschildrensvillages.in/sponsor-a-child/" target="_blank">
+                        <button class="btn1">Sponsor A <br> Child</button></a>
+                    &emsp; &emsp;
+                </td>
+
+                <td>
+                    <a href="https://www.soschildrensvillages.in/stories-of-children/" target="_blank">   <button class="btn1">Update</button>  </a>
+                    &emsp; &emsp;
+                </td>
+
+                <td>
+                    <a href="https://www.soschildrensvillages.in/donate-on-your-birthday/#" target="_blank"> <button class="btn1">Ways to give</button> </a>
+                    
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                </td>
+
+                <td>
+                    <button class="btn2"><img src="https://cdn.iconscout.com/icon/free/png-64/find-221-840222.png"
+                            width="20px" height="20px" alt=""></button>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                </td>
+
+                <td>
+
+                    <a href="https://www.soschildrensvillages.in/donate-now/#" target="_blank"><button
+                            class="btn3">Donate
+                            Now</button></a>&emsp;&emsp;&emsp;&emsp;&emsp;
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- ****************************************Slides************************************** -->
+
+    <div id="slideshow">
+
+        <div class="slide-wrapper">
+
+            <div class="slide">
+                <h1 class="slide-number">
+
+                </h1>
+            </div>
+
+            <div class="slide">
+                <h1 class="slide-number">
+
+                </h1>
+            </div>
+
+            <div class="slide">
+                <h1 class="slide-number">
+
+                </h1>
+            </div>
+
+            <div class="slide">
+                <h1 class="slide-number">
+
+                </h1>
+            </div>
+            <div class="slide">
+
+                <h1 class="slidenumber">
+
+                </h1>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- ************************ Para **************************88-->
+        <div>
+
+            <center>
+                <font style="font-size: 40px;">
+                    <strong>Basket of Care Solutions</strong>
+                </font>
+            </center>
+
+            <center>
+
+                <font style="font-size: 20px;">
+                    For over 5 decades we continue to provide children without parental care or at the risk of losing
+                    it, a
+                    value chain of quality care services that goes beyond childcare
+                    <br>
+                    alone, to ensuring comprehensive child development. Our long-term customized care interventions such
+                    as,
+                    Family Like Care, Special Needs Childcare, Foster
+                    <br>
+                    Care, Short Stay Homes, Family Strengthening, Kinship Care, Emergency Childcare, Education & Youth
+                    Skilling and are aimed at transforming lives and making
+                    <br>
+                    children into self-reliant and contributing members of society. We empower vulnerable families in
+                    communities to become financially independent, thereby enabling
+                    <br>
+                    them to create safe and nurturing spaces for children under their care.
+                    <br>
+                </font>
+            </center>
+            <br><br>
+
+
+            <!-- **************************************** myimgfirst 6 Img******************************* -->
+
+            <div class="myimgflip">
+
+                <div class="myimgflip-inner">
+
+                    <div class="myimgflip-front1">
+
+                        <img src="../SOS/PrjtSOS/back.jpg.jpg" width="525px" height="495px">&ensp;
+                        <img src="../SOS/PrjtSOS/img1 (2).jpg" width="500px" height="495px">&ensp;
+                        <img src="../SOS/PrjtSOS/hm2.jpg" width="425px" height="495px">&ensp;
+                    </div>
+
+                    <div class="myimgflip-back1">
+
+                        <img src="../SOS/PrjtSOS/ch1.jpg" width="425px" height="495px">&ensp;
+                        <img src="../SOS/PrjtSOS/ch11.jpg" width="600px" height="495px">&ensp;
+                        <img src="../SOS/PrjtSOS/ch4.jpg" width="425px" height="495px">&ensp;
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- <div class="myimgflip">
+
+
+                <div class="myimg-front">
+                    <img src="../SOS/PrjtSOS/back.jpg.jpg" alt="">&ensp;
+                </div>
+                <div class="myimg-back">
+                    <img src="../SOS/PrjtSOS/img1 (2).jpg" height="425px" width="400px" alt="">&ensp;
+                </div>
+
+            </div> -->
+
+
+
+
+            <!-- <div class="myimg">
+                &ensp;
+                <img src="../SOS/PrjtSOS/back.jpg.jpg" alt="">&ensp;
+                <img src="../SOS/PrjtSOS/img1 (2).jpg" height="425px" width="400px" alt="">&ensp;
+                <img src="../SOS/PrjtSOS/ch1.jpg" height="425px" width="420px" alt="">&ensp;
+                &ensp;
+
+            </div> -->
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--*************************************** Flip Boxes ************************************ -->
+
+        <!-- 1st flip box -->
+
+        <table class="tab1">
+            <tr>
+                <td>
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                </td>
+
+                <td>
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <br><br><br>
+                                    <img src="https://cdn.iconscout.com/icon/free/png-64/home-2494118-2087491.png"
+                                        alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 20px;">
+                                        Family like care
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Committed to provide a caring family to
+                                        every child without parental care
+
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+
+                <!-- 2nd flip box -->
+
+                <td>
+
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front1">
+                                    <br><br>
+                                    <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/07/Special-Needs-Childcare.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Special need childcare
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back1">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Focusing on specialized long-term care for differently abled children without
+                                        parental care
+
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+
+                <!-- 3rd flip box -->
+
+                <td>
+
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front3">
+                                    <br><br>
+                                    <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/07/Foster-Care-2.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Foster Care
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back3">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Making way for quality childcare in certified foster families
+
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+
+                <!-- 4th flip box -->
+
+                <td>
+
+                    <div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front4">
+                                    <br><br>
+                                    <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/07/SHORT.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Short Stay Homes
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back4">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Creating safe spaces for children in distress
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+                <td>
+                    &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;
+                    <img src="../SOS/PrjtSOS/hm3.jpg" width="480px" height="310px" alt="">
+                    <br>
+                </td>
+
+            </tr>
+
+            <!-- 5th flip box -->
+
+            <tr>
+                <td>
+                    &ensp;&ensp;&ensp;&ensp;&ensp;
+                </td>
+
+                <td>
+                    <div>
+                        <div class="flip-card5">
+                            <div class="flip-card-inner5">
+                                <div class="flip-card-front5">
+                                    <br><br>
+                                    <img src="	https://www.soschildrensvillages.in/wp-content/uploads/2021/07/Family-Like-Care.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Family Strengthening Programme
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back5">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Helping vulnerable families to become self-reliant to afford quality care for
+                                        their
+                                        children
+
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+
+                <!-- 6th flip box -->
+
+                <td>
+
+                    <div>
+                        <div class="flip-card6">
+                            <div class="flip-card-inner6">
+                                <div class="flip-card-front6">
+                                    <br><br>
+                                    <img src="	https://www.soschildrensvillages.in/wp-content/uploads/2021/07/Kinship-Care-2.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Kinship Care
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back6">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Facilitating parental care among next of kin families
+
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+
+                <!-- 7th flip box -->
+
+                <td>
+                    <div>
+                        <div class="flip-card7">
+                            <div class="flip-card-inner7">
+                                <div class="flip-card-front7">
+                                    <br><br>
+                                    <img src="	https://www.soschildrensvillages.in/wp-content/uploads/2021/07/EMERGENCY-img.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Emergency Childcare
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back7">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Providing relief and rehabilitation to families affected by calamities/
+                                        emergencies
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+                <td>
+                    &ensp;&ensp;&ensp;
+                </td>
+
+                <!-- 8th flip box -->
+
+                <td>
+
+                    <div>
+                        <div class="flip-card8">
+                            <div class="flip-card-inner8">
+                                <div class="flip-card-front8">
+                                    <br><br>
+                                    <img src="	https://www.soschildrensvillages.in/wp-content/uploads/2021/07/Education-Youth-Skilling.png"
+                                        width="100px" height="100px" alt="Avatar">
+                                    <br>
+                                    <font style="font-size: 18px;">
+                                        Education &amp; Youth Skilling
+                                    </font>
+                                </div>
+
+                                <div class="flip-card-back8">
+                                    <br>
+                                    <br><br>
+                                    <font style="font-size: 20px;">
+                                        Ensuring quality and value - based education
+                                        for children and supporting youth in skilling for self-reliance
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </td>
+
+
+                <td>
+
+                <td>
+
+                    &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;
+                    <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/09/cercal.png" width="400px"
+                        height="350px" alt="">
+                    <br>
+                    <center>
+                        <font style="position: ;center">
+                            Not childcare, but Wholesome Child Development
+                        </font>
+
+                    </center>
+                </td>
+
+                </td>
+
+
+
+
+            </tr>
+        </table>
+
+
+        <!--**********************************************  OUR COMMITED NO CHILD ALONE IMG **********************************************************-->
+
+        <div class="d1">
+
+            <div>
+                <img src="https://demo.themewinter.com/wp/courselog/kindergarten/wp-content/uploads/sites/8/2021/04/shape_1.png"
+                    width="1500px" alt="">
+            </div>
+
+            <center>
+
+                <div>
+                    <font style="font-size: 50px;" color="white">
+
+                        Our Commitment – No Child Alone
+                        <br><br>
+
+                    </font>
+                    <!-- IMG of no child should grow alone -->
+                    <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/08/png-txt.png" alt="">
+
+                    <br>
+                    <font style="font-size: 23px;" color="white">
+                        We are committed to creating a safe environment for children where they can grow up happily,<br>
+                        and have access to education and opportunities for a secure future.
+                    </font>
+                    <br><br>
+                    <!-- img of #nochildalone -->
+                    <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/08/no-child-btn.png" alt="">
+
+                </div>
+
+            </center>
+
+            <div>
+                <img src="https://demo.themewinter.com/wp/courselog/kindergarten/wp-content/uploads/sites/8/2021/04/shape_2.png"
+                    width="1500px" alt="">
+            </div>
+
+        </div>
+        <br><br><br>
+
+
+        <!--*************************************  Our Impact-Supporting Children wherever they are 8 BOXES ************************************ -->
+
+        <div>
+
+            <center>
+                <font style="font-size: 50px;">
+                    <strong>Our Impact-Supporting Children wherever they are</strong>
+                </font>
+            </center>
+
+            <br><br><br><br>
+
+            <table class="boximg" align ="center" width="auto" height="auto" >
+
+                <tr>
+
+                    <!-- First Box -->
+
+                    <td>
+                        <div>
+                            <div class="f1">
+
+                                <div class="s1">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Family Like <br> &ensp; care
+                                    </font>
+
+                                </div>
+
+                                <div class="a1">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; Recreating family like environment for <br> &ensp; 6,500 + children with
+                                        a stable caregiver <br> &ensp; and social relationships
+                                    </font>
+                                </div>
+
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img src="../SOS/PrjtSOS/m1.jpg" width="400px" height="350px" alt="">
+
+                    </td>
+
+                    <!-- 2nd box -->
+
+                    <td>
+                        <div>
+                            <div class="f2">
+
+                                <div class="s2">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Family <br> &ensp; Strengthening
+                                    </font>
+
+                                </div>
+
+                                <div class="a2">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp;35923 Direct Beneficiaries (Below <br> &ensp; 18yrs children, VT Youth &
+                                        primary <br> &ensp; caregivers)
+                                    </font>
+                                </div>
+
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <!-- 3rd box -->
+                    <td>
+                        <div>
+                            <div class="f3">
+
+                                <div class="s3">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp; Kinship Care<br> &ensp;
+                                    </font>
+
+                                </div>
+
+                                <div class="a3">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; Ensuring 279 + children grow up in <br> &ensp; natural cultural
+                                        environments
+                                        <br> &ensp; (in 182 Kinship families )
+                                    </font>
+                                </div>
+
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img src="../SOS/PrjtSOS/hm4.jpg" width="400px" height="250px" alt="">
+
+                    </td>   
+
+                    <!-- 4th box-->
+
+                    <td>
+
+                        <div>
+                            <div class="f4">
+
+                                <div class="s4">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Short Stay <br> &ensp; Homes
+                                    </font>
+
+                                </div>
+
+                                <div class="a4">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; 38 short stay homes are operating in 28 <br> &ensp;Children’s Villages
+                                    </font>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+
+
+
+                </tr>
+
+                <tr>
+
+                    <!-- 5th box-->
+
+                    <td>
+
+                        <div>
+
+                            <div class="f5">
+
+                                <div class="s5">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Disaster & <br> &ensp; Emergency
+                                    </font>
+
+                                </div>
+                                <div class="a5">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; 15,000 children <br> &ensp; supported last year during emergencies <br>
+                                        &ensp; and disasters
+                                    </font>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </td>
+                    <td>
+                        <img src="../SOS/PrjtSOS/sosfeed-1920-high.webp" width="400px" height="250px" alt="">
+
+                    </td>
+
+
+                    <!--6 th box-->
+
+                    <td>
+
+                        <div>
+                            <div class="f6">
+                                <div class="s6">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Education & <br> &ensp; Skilling
+                                    </font>
+
+                                </div>
+                                <div class="a6">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; 2402 youth completed skill training <br> &ensp;2402 youth completed skill
+                                        training
+                                    </font>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <!-- 7th box -->
+                    <td>
+                        <div>
+                            <div class="f7">
+                                <div class="s7">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Foster Care
+                                    </font>
+
+                                </div>
+                                <div class="a7">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; 25 children reached out <br> &ensp; 18 Care Leavers
+                                    </font>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <img src="../SOS/PrjtSOS/hm5.webp" width="400px" height="350px" alt="">
+
+                    </td>
+
+                    <!-- 8th box -->
+
+                    <td>
+                        <div>
+                            <div class="f8">
+                                <div class="s8">
+                                    <br><br>
+                                    <font style="font-size: 20px;" color="white">
+                                        &ensp;Special <br> &ensp; Childcare
+                                    </font>
+
+                                </div>
+                                <div class="a8">
+                                    <br>
+                                    <font style="font-size: 16px;">
+                                        &ensp; Specially abled children being extended <br>&ensp; lifelong care - 53
+                                        children (18 + years); <br>&ensp; 20 children 23 +years
+                                    </font>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+        <br><br><br><br>
+
+
+
+        <!--********************************** WHERE WE WORK *********************************-->
+
+
+
+        <div class="d2">
+
+            <br><br>
+            <center>
+                <font style="font-size: 50px;" color="white">
+                    Where We Work
+                </font>
+            </center>
+            <br><br>
+
+            <table>
+
+                <tr>
+                    <td>
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                    </td>
+
+                    <td>
+
+                        <div class="d3">
+
+                            <br>
+                            <font style="font-size: 30px;" color="white">
+                                &ensp; 32
+                            </font>
+                            <br>
+
+                            <font style="font-size: 20px;" color="white">
+                                &ensp; SOS CHILDREN’S VILLAGES IN 22 STATES&ensp;&ensp;&ensp;&ensp;&ensp;
+                            </font>
+                            <br>
+                            <br>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+                        &ensp;&ensp;&ensp;
+                    </td>
+
+                    <td>
+                        <div class="d3">
+
+                            <br>
+                            <font style="font-size: 30px;" color="white">
+                                &ensp; 440+
+                            </font>
+                            <br>
+
+                            <font style="font-size: 20px;" color="white">
+                                &ensp; HOMES FOR CHILDREN&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+                            </font>
+                            <br><br>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+                        &ensp;&ensp;&ensp;
+
+                    </td>
+
+                    <td>
+                        <div class="d3">
+
+                            <br>
+                            <font style="font-size: 30px;" color="white">
+                                &ensp;30000+
+                            </font>
+                            <br>
+                            <font style="font-size: 20px;" color="white">
+                                &ensp; CHILDREN CARED FOR ANNUALLY&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            </font>
+                            <br><br>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br><br><br>
+
+        <!--*************************************** TWO MAPs *****************************************-->
+
+        <div class="bimg">
+
+
+            <table>
+
+                <tr>
+
+                    <td>
+                        <center>
+                            <font style="font-size: 40px;">
+                                &ensp;&ensp;&ensp;&ensp;<strong>What sets us apart</strong>
+                            </font>
+                        </center>
+
+                        <br><br>
+                        &ensp;&ensp;&ensp;&ensp;&ensp;
+                        <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/09/129.png" alt="">
+                        &ensp;&ensp;&ensp;&ensp;&ensp;
+
+                    </td>
+
+                    <td style="background-color: #dadada3b;">
+
+                        <center>
+                            <font style="font-size: 40px;">
+                                <strong>Our Reach</strong>
+                            </font>
+                        </center>
+
+                        <br><br><br><br><br>
+
+                        &ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;
+                        <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/09/India-Map-V3-Final.png"
+                            alt="">
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </div>
+
+        <br><br><br><br>
+
+        <!--************************ NEWS AND UPDATE **********************************-->
+
+        <div class="k1">
+
+            <center>
+                <font style="font-size: 50px;" color="white">
+                    News & Updates
+                </font>
+            </center>
+            <br><br>
+
+            <table>
+                <tr>
+                    <td>
+                        &ensp;&ensp;&ensp; &ensp;
+                    </td>
+
+                    <td>
+                        <div class="h1">
+
+                            <font style="font-size: 20px;" color="white">
+                                Orphaned as children, these intellectually-challenged athletes make it big at Special
+                                Olympics | Lifestyle News,The Indian Express
+                            </font>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+                        &ensp; &ensp;
+                    </td>
+
+                    <td>
+                        <div class="h1">
+
+                            <font style="font-size: 20px;" color="white">
+                                Livelihood Rehabilitation Project by NGO at Avalanche-Hit Karchhon of Uttarakhand -
+                                India
+                                CSR Network
+                            </font>
+
+                        </div>
+
+                    </td>
+
+                    <td>
+                        &ensp; &ensp;
+                    </td>
+
+                    <td>
+                        <div class="h1">
+
+                            <font style="font-size: 20px;" color="white">
+                                These Bhopal girls defy disability, win accolades & now train others for Special
+                                Olympics |
+                                Bhopal News - Times of India (indiatimes.com)
+                            </font>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        &ensp; &ensp;
+                    </td>
+
+                    <td>
+                        <div class="h1">
+
+                            <font style="font-size: 20px;" color="white">
+                                Rescued children show respect to COVID warriors, send rakhis, cards to doctors, nurses
+                                (medicaldialogues.in)
+                            </font>
+
+                        </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br><br><br>
+
+        <!--*********************************************Laast block "OVERVIEW" ************************************************  -->
+
+        <div class="k2">
+
+            <table>
+
+                <tr>
+
+                    <td>
+
+                        <br><br><br><br><br>
+
+                        <font style="font-size: 30px;" color="white">
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; DOWNLOAD OUR ANDROID APP
+                        </font>
+
+                        <br><br>
+
+                        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;
+                        &ensp;&ensp;&ensp;
+                        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;
+
+                        <a href="https://play.google.com/store/apps/details?id=com.sosindia.soscvidonorapp1"
+                            target="_blank">
+
+                            <img src="https://www.soschildrensvillages.in/wp-content/uploads/2021/11/Icon-Google-play.png"
+                                alt="">
+
+                        </a>
+
+                    </td>
+
+                    <td>
+                        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;
+                    </td>
+
+                    <td>
+
+                        <br><br><br><br>
+
+                        <font style="font-size: 30px;" color="white">
+                            ABOUT SOS INDIA
+                        </font>
+                        <br><br>
+
+                        <font style="font-size: 20px;" color="white">
+
+                            > &ensp;Financial Information
+                            <br><br>
+                            > &ensp;Annual Report
+                            <br><br>
+                            > &ensp;Publications
+                            <br><br>
+                            > &ensp;SOS Messengers
+                            <br><br>
+                            > &ensp;Support A Family
+                            <br><br>
+                            > &ensp;Events
+                            <br><br>
+                            > &ensp;Blog
+                            <br><br>
+
+                        </font>
+
+                    </td>
+
+                    <td>
+                        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;
+                    </td>
+
+                    <td>
+
+                        <font style="font-size: 30px;" color="white">
+                            CONTACT US
+                        </font>
+                        <br><br>
+
+                        <font style="font-size: 20px;" color="white">
+
+                            SOS Children’s Villages of India <br>
+                            National Office, Plot No. 4, Block C-1 <br>
+                            Institutional Area, Nelson Mandela <br>
+                            Marg Vasant Kunj New Delhi – 110 <br>
+                            070, INDIA <br>
+
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/mail-2844876-2365225.png" width="30px"
+                                height="30px" alt="">
+
+                            sosindia.info@soscvindia.org
+
+                        </font>
+
+                        <br><br><br><br><br><br>
+
+                    </td>
+
+                </tr>
+                <tr></tr>
+                <tr></tr>
+
+                <tr>
+                    <center>
+                        <td>
+
+                        </td>
+                    </center>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <br><br><br>
+
+    </div>
+
+</body>
+
+</html>
