@@ -14,8 +14,15 @@ header {
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0;
+    font-family: "Gupter";
+    font-size: 20px;
+    color: #91927c;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    width: 981px;
+    height: 26px;
+}
 }
 
 section.content {
@@ -24,22 +31,45 @@ section.content {
 }
 
 h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-family: "Gupter";
+    font-weight: 700; 
+    font-size: 50px;
+    line-height: 59px;
+    color: #494924; 
+    text-align: center;
+    width: 585px;
+    height: 59px;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 p {
-    line-height: 1.5;
+  
+    font-family: "halant";
+    font-size:15px;
+    font-weight: 400;
+    width: 981px;
+    height: 52px;
+    line-height: 26px;
+    color: #4E4E4E;
     
 }
 
 .more {
+    font-family: "halant";
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    width: 194px;
+    height: 48px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px, 14px, 10px, 14px;
     color: #fff;
     background-color: #4D5628;
     text-decoration: none;
-    margin: 20px;
+    text-align: center;
+    border-radius: 7px;  
+    box-shadow: #444 0px 0px 5px;
 }
 
 .more:hover {
