@@ -1,0 +1,123 @@
+body {
+    background: #e5dfd1;
+    margin: 0px; 
+   
+
+ 
+}
+
+.container {
+    position: relative;
+    width: 1000px; /* Adjusted width to fit all three boxes */
+    height: 1000px; /* Adjusted height to fit all three boxes */
+
+.text {
+    margin: 0px;
+    width: 558px;
+    height: fit-content;
+    top: 282px;
+    left: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    margin: 22px;
+    width: 585px;
+    height: 55px;
+    font-family: Gupter;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+    color: #080808;
+}
+
+.text h5 {
+    margin: 0px;
+    width: 818px;
+    height: 26px;
+    font-family: Halant;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #A5A692;
+}
+
+.text p {
+    margin: 0px;
+    width: 559px;
+    height: 78px;
+    font-family: Halant;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #595959;
+
+}
+
+.box {
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    left: 10%;
+    z-index: 3;
+    width: 639px;
+    height: 394px;
+    left: 77px;
+    top: 200px;
+}
+
+.box2 {
+    position: absolute;
+    width: 571.85px;
+    height: 540.12px;
+    top: 91px;
+    left: 500px;
+    gap: 0px;
+    opacity: 0px;
+    border: 10px solid white;
+    background: #f0f0f0;
+    z-index: 2;
+}
+
+.box2 img{
+    width: 571.85px;
+    height: 540.12px;
+}
+
+.box3 {
+    
+    width: 694px;
+    height: 664.03px;
+    opacity: 0px;
+    background: #e0e0e0;
+    right: 0px;
+    left: 650px;
+    z-index: 1;
+    
+
+
+   
+    top: 40px; /* Adjusted top position */
+    bottom: 40px;
+  
+}
+
+.box3 img{
+    width: 694px;
+    height: 664.03px;
+}
