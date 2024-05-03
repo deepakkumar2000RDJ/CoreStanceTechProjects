@@ -1,8 +1,6 @@
 body {
     background: #e5dfd1;
     margin: 0px; 
-   
-
  
 }
 
@@ -10,7 +8,7 @@ body {
     position: relative;
     width: 700px; /* Adjusted width to fit all three boxes */
     height: 700px; /* Adjusted height to fit all three boxes */
-
+}
 .text {
     margin: 0px;
     width: 558px;
