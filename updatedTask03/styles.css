@@ -8,8 +8,8 @@ body {
 
 .container {
     position: relative;
-    width: 1000px; /* Adjusted width to fit all three boxes */
-    height: 1000px; /* Adjusted height to fit all three boxes */
+    width: 700px; /* Adjusted width to fit all three boxes */
+    height: 700px; /* Adjusted height to fit all three boxes */
 
 .text {
     margin: 0px;
@@ -86,7 +86,7 @@ body {
     width: 571.85px;
     height: 540.12px;
     top: 91px;
-    left: 500px;
+    left: 650px;
     gap: 0px;
     opacity: 0px;
     border: 10px solid white;
@@ -101,23 +101,17 @@ body {
 
 .box3 {
     
-    width: 694px;
-    height: 664.03px;
+    width: 715px;
+    height: 700px;
     opacity: 0px;
     background: #e0e0e0;
     right: 0px;
-    left: 650px;
+    left: 820px;
     z-index: 1;
-    
-
-
-   
-    top: 40px; /* Adjusted top position */
-    bottom: 40px;
-  
+    top: 25px; /* Adjusted top position */
 }
 
 .box3 img{
-    width: 694px;
-    height: 664.03px;
+    width: 715px;
+    height: 700px;
 }
